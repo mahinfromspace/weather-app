@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'sans-serif';
+    color: #fff
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#app {
+    background-image: linear-gradient(325deg,
+            hsl(240deg 97% 55%) 0%,
+            hsl(240deg 97% 65%) 32%,
+            hsl(240deg 97% 70%) 59%,
+            hsl(240deg 96% 75%) 74%,
+            hsl(240deg 96% 79%) 84%,
+            hsl(240deg 96% 82%) 90%,
+            hsl(240deg 96% 85%) 94%,
+            hsl(240deg 96% 88%) 97%,
+            hsl(240deg 96% 91%) 99%,
+            hsl(240deg 96% 93%) 100%,
+            hsl(240deg 96% 96%) 100%,
+            hsl(240deg 95% 98%) 100%,
+            hsl(0deg 0% 100%) 100%);
+    width: 17rem;
+    height: 65vh;
+    margin-top: 1rem;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#searchBar {
+    margin-top: 1.5rem;
+}
+
+#searchBarInput {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff69;
+}
+
+#searchBar button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Info */
+#info {
+
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+#info p {
+    font-size: 0.61rem;
+}
+
+#info h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 0.41rem
+}
+
+/* description */
+#description {
+
+    text-align: center;
+    margin-top: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#conditionIcon {
+    width: 4rem;
+    height: 4rem;
+}
+
+/* Temperature */
+#temp {
+    position: absolute;
+    bottom: 7rem;
+    font-size: 1.7rem;
+    font-weight: 700
+}
+
+#extraInfo {
+
+
+    width: 100%;
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    justify-content: space-around
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem
+}
+
+.info h5 {
+    font-size: 0.7em;
+}
+
+.info p {
+    font-size: 1em;
+}
