@@ -15,6 +15,7 @@ const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "
 
 const cityName = document.querySelector("#city");
 const date = document.querySelector("#date");
+const time = document.querySelector("#time");
 const description = document.querySelector("#condition");
 const conditionIcon = document.querySelector("#conditionIcon");
 const temp = document.querySelector("#temp");
@@ -27,7 +28,9 @@ const searchIcon = document.querySelector("#searchIcon");
 
 const dateObj = new Date()
 
-date.innerText = months[dateObj.getMonth()] + " " + dateObj.getDate() + ", " + dateObj.getFullYear()
+
+
+date.innerText += months[dateObj.getMonth()] + " " + dateObj.getDate() + ", " + dateObj.getFullYear()
 
 const searchCity = async (city) => {
     try {
@@ -63,7 +66,12 @@ const searchCity = async (city) => {
 
 window.addEventListener("load", async (evt) => {
     evt.preventDefault();
+    let timeUpdate = setInterval(() => {
+        let dateObj = new Date()
+        let currTime = dateObj.getHours() + ":" + dateObj.getMinutes() + ":" + dateObj.getSeconds();
+        time.innerText = currTime;
 
+    }, 1000);
     searchCity("tokyo")
 
 
