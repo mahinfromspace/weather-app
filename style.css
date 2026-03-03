@@ -96,6 +96,7 @@ body {
 #info p {
     font-size: 0.61rem;
     transition: all 1s;
+    display: inline-block;
 }
 
 #info h3 {
